@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>hexo_blog</title>
+      <link href="/2020/08/15/hexo-blog/"/>
+      <url>/2020/08/15/hexo-blog/</url>
+      
+        <content type="html"><![CDATA[<h1 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h1><h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><blockquote><p>安装hexo 之前需要安装Git 与Node.js</p></blockquote><ul><li><a href="https://git-scm.com/">Git</a> </li></ul><blockquote><p>新建一个公开仓库，仓库名格式为 <name>.github.io   name为github名字</p></blockquote><ul><li><p><a href="https://nodejs.org/">Node.js</a></p><p>安装 Node.js 的最佳方式是使用 <a href="https://github.com/nvm-sh/nvm">nvm</a></p></li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#安装nvm，以下二选一</span></span><br><span class="line">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash</span><br><span class="line">wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash</span><br><span class="line"></span><br><span class="line">nvm install stable</span><br></pre></td></tr></table></figure><h3 id="安装hexo建立blog"><a href="#安装hexo建立blog" class="headerlink" title="安装hexo建立blog"></a>安装hexo建立blog</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#安装hexo</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"><span class="comment">#建立网站</span></span><br><span class="line">hexo init   <span class="comment">#名字随便起</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#启动hexo服务</span></span><br><span class="line"><span class="built_in">cd</span> hexo_blog</span><br><span class="line">hexo s  <span class="comment">#浏览器访问http://localhost:4000就可以预览hexo博客了。</span></span><br></pre></td></tr></table></figure><h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>编辑配置文件，修改<a href="https://hexo.io/docs/one-command-deployment">Deployment</a>下的<code>deploy</code>字段</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#vim _config.yml</span></span><br><span class="line"></span><br><span class="line">deploy:</span><br><span class="line"> <span class="built_in">type</span>: git</span><br><span class="line"> repository: git@github.com:你的用户名/你的用户名.github.io.git</span><br><span class="line"> branch: master</span><br></pre></td></tr></table></figure><p>执行 <code>hexo clean &amp;&amp; hexo d -g</code></p><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><blockquote><p>hexo new XXX #新建文章，XXX可替换为你的文章名<br>hexo new page XXX #新建页面，XXX可替换为你的页面名<br>hexo generate #生成静态页面，可缩写hexo g<br>hexo server #开启预览，默认端口4000，可缩写hexo s<br>hexo deploy #部署到GitHub，可缩写hexo d<br>hexo help # 查看帮助<br>hexo version #查看Hexo的版本</p></blockquote>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/2020/08/14/hexo/"/>
       <url>/2020/08/14/hexo/</url>
