@@ -87,7 +87,7 @@
       <div class='cover-body'>
   <div class='a'>
     
-      <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png'/>
+      <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/Hzlarm/hzlarm.github.io@v1.0/img/hzlarm/hzlarm.png'/>
     
     
     
@@ -403,16 +403,16 @@
  
 <script> 
   // 处理封面 此时 jquery 还没加载 
-  if ("docs" == "none") { // 移除封面 
+  if ("blog" == "none") { // 移除封面 
     document.getElementsByClassName('cover')[0].style.display = "none"; 
     document.getElementsByClassName('l_body')[0].classList.add("nocover"); 
     document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show"); 
   } else { 
-    if ("docs" == "blog") { // 半屏 
+    if ("blog" == "blog") { // 半屏 
       document.getElementsByClassName('cover')[0].classList.remove("full"); 
       document.getElementsByClassName('cover')[0].classList.add("half"); 
       document.getElementsByClassName('scroll-down')[0].style.display = "none"; 
-    } else if ("docs" == "docs") { // 全屏 
+    } else if ("blog" == "docs") { // 全屏 
       document.getElementsByClassName('cover')[0].classList.remove("half"); 
       document.getElementsByClassName('cover')[0].classList.add("full"); 
       document.getElementsByClassName('scroll-down')[0].style.display = ""; 
@@ -469,7 +469,7 @@
 <div class='new-meta-item author'>
   <a class='author' href="/" rel="nofollow">
     <img no-lazy src="">
-    <p>请设置文章作者</p>
+    <p>hzlarm</p>
   </a>
 </div>
 
@@ -1099,8 +1099,8 @@
           }
           shuffle(imgs);
         }
-        if ('.cover') {
-          $('.cover').backstretch(
+        if ('') {
+          $('').backstretch(
             imgs,
           {
             duration: "20000",
@@ -1477,8 +1477,8 @@
         pjax_fancybox();
         
           
-          if ('.cover') {
-            $('.cover').backstretch("resize");
+          if ('') {
+            $('').backstretch("resize");
           } else {
             $.backstretch("resize");
           }
